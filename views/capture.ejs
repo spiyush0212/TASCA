@@ -12,9 +12,32 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <!-- Custom CSS -->
     <link rel="stylesheet" href="stylesheets/style.css">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KBM0RY4051"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-KBM0RY4051');
+    </script>
 </head>
 
 <body class="light-blue darken-4">
+
+    <%= console.log('Starting capturing screenshots') %>
+    <!-- Starting TASCA -->
+    <% let i = 1; %>
+    <% let intervalId = setInterval(() => { %>
+    <%= captureScreenshot(i); %>
+    <% if (i >= times) { %>
+    <% clearInterval(intervalId) %>
+    <% } %>
+    <% i++; %>
+    <% }, duration * 1000); %>
+    <!-- Closing TASCA -->
+    <%= console.log('Closing capturing screenshots') %>
+
     <header id="header" class="container lime-text center-align">
         <h1>TASCA</h1>
         <h2>The Automatic Screenshot Capture App</h2>
@@ -37,14 +60,6 @@
         </div>
     </footer>
 
-    <% let i = 1; %>
-    <% let intervalId = setInterval(() => { %>
-    <%= captureScreenshot(i); %>
-    <% if (i >= times) { %>
-    <% clearInterval(intervalId) %>
-    <% } %>
-    <% i++; %>
-    <% }, duration * 1000); %>
 
     <script src="javascript/index.js"></script>
 </body>

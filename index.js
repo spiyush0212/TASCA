@@ -28,6 +28,8 @@ app.get('/', (req, res) => {
 app.post('/capture', (req, res) => {
     const times = req.body.times;
     const duration = req.body.duration;
+    console.log("Times = " + times);
+    console.log("Duration = " + duration);
     res.render('capture.ejs', { captureScreenshot: captureScreenshot, duration: duration, times: times });
 })
 
