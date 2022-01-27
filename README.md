@@ -5,7 +5,7 @@
   </a>
   <h3 align="center">TASCA : The Automatic Screenshot Capturing Application</h3>
   <p align="center">
-    An awesome application to screenshot automatically your screen!
+    An application to capture screenshots automatically of your screen!
     <br />
     <br />
     <a href="https://github.com/spiyush0212/TASCA/issues">Report Bug</a>
@@ -20,6 +20,11 @@ Do you capture screenshots while conducting a web meeting?
 Do you find yourself taking screenshots of web designs for inspiration and moodboards?  
 Whatever might be your reason, TASCA is the perfect solution for this domain.  
 Thanks to this application, you will never have to worry about taking screenshots.  
+
+Website Link: https://piyushtasca.herokuapp.com/  
+Note: Currently the app can only by used on your local machine by following the below steps and the website can not be used.
+
+## Images
 
 ![Image 1](https://github.com/spiyush0212/TASCA/blob/main/screenshots/ss1.png)  
 ![Image 2](https://github.com/spiyush0212/TASCA/blob/main/screenshots/ss2.png)  
