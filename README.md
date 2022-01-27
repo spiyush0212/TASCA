@@ -14,18 +14,6 @@
   </p>
 </p>
 
-<!-- TABLE OF CONTENTS -->
-<details open="open">
-  <summary>Table of Contents</summary>
-  <ol>
-    <li><a href="#about-the-project">About The Project</a></li>
-    <li><a href="#getting-started">Getting Started</a></li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-  </ol>
-</details>
-
 ## About The Project
 
 Do you capture screenshots while conducting a web meeting?  
@@ -33,12 +21,14 @@ Do you find yourself taking screenshots of web designs for inspiration and moodb
 Whatever might be your reason, TASCA is the perfect solution for this domain.  
 Thanks to this application, you will never have to worry about taking screenshots.  
 
-![Image 1](https://raw.githubusercontent.com/spiyush0212/TASCA/main/screenshots/ss1.png)  
-![Image 2](https://raw.githubusercontent.com/spiyush0212/TASCA/main/screenshots/ss2.png)  
+![Image 1](https://github.com/spiyush0212/TASCA/blob/main/screenshots/ss1.png)  
+![Image 2](https://github.com/spiyush0212/TASCA/blob/main/screenshots/ss2.png)  
 
 ## Built With
 
 * [Node.js](https://nodejs.org/en/download/)
+* Express.js
+* Materialise CSS
 
 You need to have Node.js installed on your machine
 
