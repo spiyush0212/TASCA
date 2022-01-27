@@ -4,7 +4,7 @@ const screenshot = require('screenshot-desktop'),
 function captureScreenshot(num) {
     screenshot()
         .then((img) => {
-            fs.writeFile('ss' + num + '.jpg', img, (err) => {
+            fs.writeFile('../ss' + num + '.jpg', img, (err) => {
                 if (err)
                     throw err;
                 console.log('Screenshot saved as ss' + num + '.jpg');

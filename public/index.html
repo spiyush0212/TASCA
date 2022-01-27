@@ -6,16 +6,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TASCA</title>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="stylesheets/style.css">
 </head>
 
-<body>
-    <h1>TASCA Website</h1>
-    <form action="/capture" method="POST">
-        <input type="text" name="times" placeholder="How many screenshots to capture?">
-        <input type="text" name="duration" placeholder="How much duration between them (in seconds)?">
-        <input type="submit" value="Submit">
-    </form>
+<body class=" light-blue darken-4">
+    <header id="header" class="container lime-text center-align">
+        <h1>TASCA</h1>
+        <h2>The Automatic Screenshot Capture App</h2>
+    </header>
+
+    <main class="container center-align">
+        <form action="/capture" method="POST">
+            <label for="times">How many screenshots do you want to capture?</label>
+            <input type="text" id="times" name="times" placeholder="Enter value here (Default = 3)">
+            <br>
+            <label for="duration">How much time duration in seconds do between them the screenshots?</label>
+            <input type="text" id="duration" name="duration" placeholder="Enter value here (Default = 5)">
+            <br>
+            <br>
+            <button class="waves-effect waves-light btn teal" type="submit">Submit</button>
+        </form>
+        <blockquote>
+            Once you click the submit button, the app will start capturing screenshots and save it on your desktop
+        </blockquote>
+    </main>
+
+    <footer class="page-footer teal darken-1">
+        <div class="footer-copyright teal">
+            <div class="container center-align">
+                Designed and developed by <a href="https://spiyush0212.github.io/Portfolio-Website/"
+                    class="lime-text">Piyush Sharma</a>
+            </div>
+        </div>
+    </footer>
+
     <script src="javascript/index.js"></script>
 </body>
 

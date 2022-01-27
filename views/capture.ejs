@@ -6,18 +6,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Capture</title>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="stylesheets/style.css">
 </head>
 
-<body>
+<body class="light-blue darken-4">
+    <header id="header" class="container lime-text center-align">
+        <h1>TASCA</h1>
+        <h2>The Automatic Screenshot Capture App</h2>
+    </header>
+
+    <main class="container center-align">
+        <p>Thank you for using TASCA. <br>
+            Your screenshots are being captured in the background. <br>
+            You can safely close this window now or capture another set of screenshots.
+        </p>
+        <a class="waves-effect waves-light btn teal" type="" href="/">Use the app again!</a>
+    </main>
+
+    <footer class="page-footer teal darken-1">
+        <div class="footer-copyright teal">
+            <div class="container center-align">
+                Designed and developed by <a href="https://spiyush0212.github.io/Portfolio-Website/"
+                    class="lime-text">Piyush Sharma</a>
+            </div>
+        </div>
+    </footer>
+
     <% let i = 1; %>
     <% let intervalId = setInterval(() => { %>
-    <%= capss(i); %>
+    <%= captureScreenshot(i); %>
     <% if (i >= times) { %>
     <% clearInterval(intervalId) %>
     <% } %>
     <% i++; %>
     <% }, duration * 1000); %>
+
+    <script src="javascript/index.js"></script>
 </body>
 
 </html>

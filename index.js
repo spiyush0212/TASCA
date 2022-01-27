@@ -5,7 +5,7 @@
 const express = require('express'),
     app = express(),
     ejs = require('ejs'),
-    capss = require('./capss'),
+    captureScreenshot = require('./modules/captureScreenshot'),
     bodyParser = require('body-parser');
 
 // ===================
@@ -28,7 +28,7 @@ app.get('/', (req, res) => {
 app.post('/capture', (req, res) => {
     const times = req.body.times;
     const duration = req.body.duration;
-    res.render('capture.ejs', { capss: capss, duration: duration, times: times });
+    res.render('capture.ejs', { captureScreenshot: captureScreenshot, duration: duration, times: times });
 })
 
 // ===================
