@@ -16,10 +16,7 @@
 
 ## About The Project
 
-Do you capture screenshots while conducting a web meeting?  
-Do you find yourself taking screenshots of web designs for inspiration and moodboards?  
-Whatever might be your reason, TASCA is the perfect solution for this domain.  
-Thanks to this application, you will never have to worry about taking screenshots.  
+Do you capture screenshots while conducting a web meeting? Do you find yourself taking screenshots of web designs for inspiration and moodboards? Whatever might be your reason, TASCA is the perfect solution for this domain. Thanks to this application, you will never have to worry about taking screenshots.  
 
 Website Link: https://piyushtasca.herokuapp.com/  
 Note: Currently the app can only by used on your local machine by following the below steps and the website can not be used.
@@ -37,9 +34,9 @@ Note: Currently the app can only by used on your local machine by following the 
 
 You need to have Node.js installed on your machine
 
-## Installation
+## Usage
 
-To get a local copy up and running follow these simple example steps;
+To use this app;
 
 1. Download the contents of this repo or simply clone the repository
    ```sh
@@ -47,10 +44,8 @@ To get a local copy up and running follow these simple example steps;
    ```
 2. Open a terminal in the TASCA folder
 3. Execute the command `npm run start`	
-
-## Roadmap
-
-See the [open issues](https://github.com/spiyush0212/TASCA/issues) for a list of proposed features (and known issues).
+4. Open your web browerser and visit `http://localhost:5000/`
+5. That's all!
 
 ## Contributions
 If you would like to add a new feature to the project, feel free to drop in a PR.  
