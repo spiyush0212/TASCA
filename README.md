@@ -43,9 +43,10 @@ To use this app;
    git clone https://github.com/spiyush0212/TASCA.git
    ```
 2. Open a terminal in the TASCA folder
-3. Execute the command `npm run start`	
-4. Open your web browerser and visit `http://localhost:5000/`
-5. That's all!
+3. Execute the command 'npm install' to install all the dependencies for this project
+4. Execute the command `npm run start' to start this project
+5. Open your web browser and visit `http://localhost:5000/`
+6. That's all!
 
 ## Contributions
 If you would like to add a new feature to the project, feel free to drop in a PR.  
